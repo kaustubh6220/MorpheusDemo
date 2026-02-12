@@ -1,0 +1,7 @@
+location            = "centralindia"
+resource_group_name = "demo-rg"
+vm_name             = "demo-vm"
+vm_size             = "Standard_B2s"
+admin_username      = "azureuser"
+admin_password      = "Password!123"
+environment         = "Dev"
