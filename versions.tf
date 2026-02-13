@@ -11,4 +11,9 @@ terraform {
 
 provider "azurerm" {
   features {}
+
+  client_id       = "<%=cypher.read('secret/azure-sp').tokenize('|')[0]%>"
+  client_secret   = "<%=cypher.read('secret/azure-sp').tokenize('|')[1]%>"
+  tenant_id       = "<%=cypher.read('secret/azure-sp').tokenize('|')[2]%>"
+  subscription_id = "<%=cypher.read('secret/azure-sp').tokenize('|')[3]%>"
 }
